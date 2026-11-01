@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Salary Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="window">
+            <div class="title-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="window-title">Python IDLE</span>
+            </div>
+
+            <form id="salary-form" class="python-form">
+                <label>Enter employee name:
+                    <input type="text" id="employeeName" required>
+                </label>
+                <label>Enter basic salary:
+                    <input type="number" id="basicSalary" step="0.01" min="0" required>
+                </label>
+                <label>Enter allowance:
+                    <input type="number" id="allowance" step="0.01" min="0" required>
+                </label>
+                <label>Enter PF deduction:
+                    <input type="number" id="pfDeduction" step="0.01" min="0" required>
+                </label>
+                <label>Enter tax deduction:
+                    <input type="number" id="taxDeduction" step="0.01" min="0" required>
+                </label>
+                <button type="submit">Calculate Salary</button>
+            </form>
+
+            <div id="output" class="output" aria-live="polite">
+                >>> Employee Salary Details
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
